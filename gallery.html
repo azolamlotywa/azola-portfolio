@@ -3,247 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Evidence | Azola Mlotywa</title>
-
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .evidence-gallery {
+            max-width: 1150px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .evidence-gallery img {
+            display: block;
+            width: 100%;
+            height: 320px;
+            object-fit: contain;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+
+        @media (max-width: 650px) {
+            .evidence-gallery {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            .evidence-gallery img {
+                height: auto;
+                max-height: 350px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
+<header class="header">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">AM</span>
+        <span class="logo-text">
+            <strong>Azola Mlotywa</strong>
+            <small>Tutoring E-Portfolio</small>
+        </span>
+    </a>
 
-        <a href="index.html" class="logo">
-            <span class="logo-icon">AM</span>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="personal.html">Personal Statement</a>
+        <a href="modules.html">Module Details</a>
+        <a href="training.html">Training &amp; Development</a>
+        <a href="delivery.html">Tutorial Delivery</a>
+        <a href="technology.html">Technology</a>
+        <a href="reflections.html">Reflections</a>
+        <a href="gallery.html" class="active">Evidence</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
 
-            <span class="logo-text">
-                <strong>Azola Mlotywa</strong>
-                <small>Tutoring E-Portfolio</small>
-            </span>
+<main class="gallery-page">
+
+    <div class="evidence-gallery">
+
+        <img src="images/clasroom2.jpeg"
+             alt="Classroom evidence">
+
+        <img src="images/classroom.jpeg"
+             alt="Classroom evidence">
+
+        <img src="images/study-room.jpeg"
+             alt="Study evidence">
+
+        <img src="images/register.jpeg"
+             alt="Register evidence">
+
+        <img src="images/feedback1.jpeg"
+             alt="Student feedback evidence">
+
+        <img src="images/feedback2.jpeg"
+             alt="Student feedback results">
+
+    </div>
+
+    <div class="gallery-navigation">
+        <a href="reflections.html" class="gallery-button">
+            &larr; Previous: Reflections
         </a>
 
-        <!-- NAVIGATION -->
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="personal.html">Personal Statement</a>
-            <a href="modules.html">Module Details</a>
-            <a href="training.html">Training &amp; Development</a>
-            <a href="delivery.html">Tutorial Delivery</a>
-            <a href="technology.html">Technology</a>
-            <a href="reflections.html">Reflections</a>
-            <a href="gallery.html" class="active">Evidence</a>
-            <a href="feedback.html">Feedback</a>
-        </nav>
+        <a href="feedback.html" class="gallery-button">
+            Next: Feedback &rarr;
+        </a>
+    </div>
 
-    </header>
+</main>
 
-    <main class="gallery-page">
+<footer class="footer">
+    <p>&copy; 2026 Azola Mlotywa | Tutoring E-Portfolio</p>
+</footer>
 
-        <!-- INTRODUCTION -->
-        <section class="gallery-hero">
-
-            <span class="gallery-label">MY TUTORING JOURNEY</span>
-
-            <h1>Evidence of Learning</h1>
-
-            <p>
-                Welcome to my evidence gallery. This page presents
-                examples of classroom learning and student feedback
-                from the DCN II tutoring sessions. These examples
-                help me reflect on learning experiences and identify
-                ways to improve my tutoring practice.
-            </p>
-
-        </section>
-
-        <!-- CLASSROOM EVIDENCE -->
-        <section class="gallery-section">
-
-
-            <p class="gallery-intro">
-                A positive learning environment can support student
-                participation, practical demonstrations and the use
-                of technology to explain concepts.
-            </p>
-
-            <div class="gallery-grid classroom-grid">
-
-                <article class="gallery-card classroom-card">
-
-                    <img
-                        src="images/classroom2.jpeg"
-                        alt="Students attending a lesson in a computer laboratory">
-
-                    <div class="gallery-card-content">
-
-
-                        <p>
-                            This photograph shows students in a computer
-                            laboratory while a presentation is displayed
-                            at the front of the room. It illustrates how
-                            technology and visual demonstrations can
-                            support classroom learning.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- STUDENT FEEDBACK -->
-        <section class="gallery-section feedback-gallery">
-
-            <h2>Student Feedback and Evaluation</h2>
-
-            <p class="gallery-intro">
-                Student feedback provides useful information about
-                the tutoring experience. The following results are
-                from the DCN II Tutor Feedback questionnaire, which
-                received 13 responses.
-            </p>
-
-            <div class="gallery-grid">
-
-                <!-- OVERALL EXPERIENCE -->
-                <article class="gallery-card feedback-card">
-
-                    <img
-                        src="images/evidence1.jpeg"
-                        alt="DCN II Tutor Feedback chart showing ratings of the overall tutoring experience">
-
-                    <div class="gallery-card-content">
-
-                        <h3>Overall Tutoring Experience</h3>
-
-                        <p>
-                            Of the 13 responses, 61.5% rated the overall
-                            tutoring experience as excellent, 30.8%
-                            rated it as good and 7.7% rated it as average.
-                        </p>
-
-                        <div class="evidence-insight">
-                            <strong>Reflection:</strong>
-                            Most respondents gave a positive rating.
-                            This feedback can help identify practices
-                            worth maintaining in future tutoring sessions.
-                        </div>
-
-                    </div>
-
-                </article>
-
-                <!-- CLARITY OF EXPLANATIONS -->
-                <article class="gallery-card feedback-card">
-
-                    <img
-                        src="images/feedback-explanations.jpeg"
-                        alt="DCN II Tutor Feedback bar chart showing ratings for the clarity of tutor explanations">
-
-                    <div class="gallery-card-content">
-
-                        <h3>Clarity of Tutor Explanations</h3>
-
-                        <p>
-                            Seven out of 13 respondents, or 53.8%,
-                            rated the clarity of the tutor's explanations
-                            as 5 out of 5.
-                        </p>
-
-                        <div class="evidence-insight">
-                            <strong>Reflection:</strong>
-                            Clear explanations are important in tutoring.
-                            I can use student feedback to reflect on
-                            communication and find ways to explain
-                            difficult concepts more effectively.
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- WHAT I LEARNED -->
-        <section class="gallery-learning-section">
-
-            <h2>What I Have Learned from This Evidence</h2>
-
-            <p>
-                The classroom photograph demonstrates the use of a
-                technology-supported learning environment, while the
-                feedback results provide information about students'
-                experiences. Together, these examples highlight the
-                importance of preparation, clear explanations and
-                listening to student feedback.
-            </p>
-
-        </section>
-
-        <!-- FUTURE IMPROVEMENT -->
-        <section class="gallery-reflection-section">
-
-            <h2>Using Feedback to Improve</h2>
-
-            <div class="gallery-reflection-grid">
-
-                <article>
-                    <h3>Maintain Strengths</h3>
-
-                    <p>
-                        Continue using clear explanations, relevant
-                        examples and appropriate learning resources.
-                    </p>
-                </article>
-
-                <article>
-                    <h3>Listen to Students</h3>
-
-                    <p>
-                        Consider student experiences and feedback
-                        when planning and delivering tutorials.
-                    </p>
-                </article>
-
-                <article>
-                    <h3>Keep Improving</h3>
-
-                    <p>
-                        Reflect on areas that need improvement and
-                        make adjustments to future tutoring sessions.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- PAGE NAVIGATION -->
-        <div class="gallery-navigation">
-
-            <a href="reflections.html" class="gallery-button">
-                &larr; Previous: Reflections
-            </a>
-
-            <a href="feedback.html" class="gallery-button">
-                Next: Feedback &rarr;
-            </a>
-
-        </div>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>&copy; 2026 Azola Mlotywa | Tutoring E-Portfolio</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
